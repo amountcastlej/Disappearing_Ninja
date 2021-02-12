@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissapearing Gohan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>jQuery Assignment</h1>
+    <div id="content">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <img src="images/gohan.png" alt="gohan">
+            <button>Restore</button>
+        </div>
+</body>
+<script> 
+    var gohanImg = "";
+    for (var i=0; i<8; i++){
+        gohanImg += '<img src="images/gohan.png" alt="gohan">'
+    }
+    gohanImg += '<button>Restore</button>'
+    $(document).ready(function(){
+        $("img").click(function(){
+            $(this).hide("slow");
+        });
+        $("button").click(function(){
+            $("img").show();
+        })
+    });
+</script>
+</html>
