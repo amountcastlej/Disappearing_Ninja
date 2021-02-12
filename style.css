@@ -1,0 +1,24 @@
+h1 {
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+#content {
+    width: 2000px;
+    margin-left: 150px;
+}
+img {
+    border: 3px solid lightblue;
+    height: 550px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 5px;
+    color: yellow;
+    display: block;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding: 8px;
+}
